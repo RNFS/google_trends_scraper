@@ -1,21 +1,20 @@
 # google-trends-scraper
 
-![Google Trends Scraper Actor Logo](https://images.apifyusercontent.com/oYyezynONTeIZJZbuoM0mrzdKFbdCiB-8HkdYEaJ_Ew/rs:fill:250:250/cb:1/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vM1ByZFpVREtZWFVYWkxXTTMtYWN0b3ItcXA2bUtTU2NZb3V0WXFDT2EtN21NQXoyNUMxaS1nb29nbGVfdHJlbmRzX2FjdG9yLmpwZw.webp)
-
-
-** A python Google Trends Scraper **  
-Fetch real-time trending searches, interest over time, interest by region, and related queries/topics with a single, configurable actor.
+![Google Trends Scraper Actor Logo](https://images.apifyusercontent.com/oYyezynONTeIZJZbuoM0mrzdKFbdCiB-8HkdYEaJ_Ew/rs:fill:250:250/cb:1/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vM1ByZFpVREtZWFVYWkxXTTMtYWN0b3ItcXA2bUtTU2NZb3V0WXFDT2EtN21NQXoyNUMxaS1nb29nbGVfdHJlbmRzX2FjdG9yLmpwZw.webp Google Trends Scraper**  
+Fetch real-time trending searches, interest over time, interest by region, and related queries/topics with a single, configurable Apify actor.
 
 ***
 
 ## Overview
 
-`apify-google-trends-scraper` wraps the [Google Trends Scraper actor on Apify](https://apify.com/scraperpro/google-trends-scraper) to provide easy command-line and code-based access. Features include:
+Struggling to scrape data from Google Trends? This easy-to-use, reliable scraper gives you access to all the data you need. Try it free for 1 day—with no credit card required—and only pay if you love it.
+
+`google-trends-scraper` wraps the [Google Trends Scraper actor on Apify](https://apify.com/scraperpro/google-trends-scraper), providing:
 
 - **Trending Now** (realtime hot searches)  
 - **Interest Over Time** (time series for keywords)  
 - **Interest By Region** (geographic breakdown)  
-- **Related Queries & Topics** (top & rising searches)
+- **Related Queries & Topics** (top & rising searches)  
 
 ***
 
@@ -84,7 +83,7 @@ Each run writes one dataset item containing:
 - `scrape_type`  
 - `data` (results array or object)  
 - `input_summary` (geo, timeframe, resolution, etc.)  
-- `error` & `error_message`
+- `error` & `error_message`  
 
 ***
 
@@ -93,7 +92,7 @@ Each run writes one dataset item containing:
 - **Rate Limits:** Use shorter timeframes or proxies to avoid `429` errors.  
 - **Data Volume:** Limit `geo_resolution` to `COUNTRY` or `REGION` before scaling to `CITY`/`DMA`.  
 - **Time Range:** The `trending_now` type supports 1–191 hours.  
-- **Empty Results:** Ensure keywords have sufficient search volume in chosen geo/timeframe.
+- **Empty Results:** Ensure keywords have sufficient search volume in chosen geo/timeframe.  
 
 ***
 
@@ -112,8 +111,6 @@ Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 ## License & Support
 
 This project is licensed under the MIT License.  
-For actor support, visit the [Apify Store listing](https://apify.com/scraperpro/google-trends-scraper) or contact radwanfaris13@gmail.com.  
+For actor support, visit the [Apify Store listing](https://apify.com/scraperpro/google-trends-scraper) or contact [radwanfaris13@gmail.com](mailto:radwanfaris13@gmail.com).
 
 *Happy scraping!*
-
-[1](https://apify.com/scraperpro/google-trends-scraper)# google_trends_scraper
