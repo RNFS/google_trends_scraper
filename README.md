@@ -3,7 +3,7 @@
 ![Google Trends Scraper Actor Logo](https://images.apifyusercontent.com/oYyezynONTeIZJZbuoM0mrzdKFbdCiB-8HkdYEaJ_Ew/rs:fill:250:250/cb:1/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vM1ByZFpVREtZWFVYWkxXTTMtYWN0b3ItcXA2bUtTU2NZb3V0WXFDT2EtN21NQXoyNUMxaS1nb29nbGVfdHJlbmRzX2FjdG9yLmpwZw.webp)
 
 
-A python Google Trends Scraper**  
+** A python Google Trends Scraper **  
 Fetch real-time trending searches, interest over time, interest by region, and related queries/topics with a single, configurable actor.
 
 ***
