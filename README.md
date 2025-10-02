@@ -52,17 +52,50 @@ curl -X POST https://api.apify.com/v2/acts/scraperpro~google-trends-scraper/runs
 ### Node.js
 
 ```javascript
-import Apify from 'apify';
+import { ApifyClient } from 'apify-client';
 
-(async () => {
-    const run = await Apify.call('scraperpro/google-trends-scraper', {
-        scrape_type: 'interest_over_time',
-        keywords: ['data science', 'machine learning'],
-        predefined_timeframe: 'today 12-m',
-        common_geo: 'US',
-    });
-    console.log(run.output[0].data);
-})();
+// Initialize the ApifyClient with your Apify API token
+// Replace the '<YOUR_API_TOKEN>' with your token
+const client = new ApifyClient({
+    token: '<YOUR_API_TOKEN>',
+});
+
+// Prepare Actor input
+const input = {
+    "keywords": [
+        "Web scraping"
+    ]
+};
+
+// Run the Actor and wait for it to finish
+const run = await client.actor("scraperpro/google-trends-scraper").call(input);
+
+// Fetch and print Actor results from the run's dataset (if any)
+console.log('Results from dataset');
+console.log(`💾 Check your data here: https://console.apify.com/storage/datasets/${run.defaultDatasetId}`);
+const { items } = await client.dataset(run.defaultDatasetId).listItems();
+items.forEach((item) => {
+    console.dir(item);
+});
+
+```
+
+
+### MCP
+```
+{
+    "mcpServers": {
+        "apify": {
+            "command": "npx",
+            "args": [
+                "mcp-remote",
+                "https://mcp.apify.com/?tools=scraperpro/google-trends-scraper",
+                "--header",
+                "Authorization: Bearer <YOUR_API_TOKEN>"
+            ]
+        }
+    }
+}
 ```
 
 ### Python
@@ -70,13 +103,21 @@ import Apify from 'apify';
 ```python
 from apify_client import ApifyClient
 
-client = ApifyClient('<APIFY_TOKEN>')
-run = client.actor("scraperpro/google-trends-scraper").call(run_input={
-    "scrape_type": "related_queries",
-    "keywords": ["python"],
-    "predefined_timeframe": "today 12-m"
-})
-print(run["output"][0]["data"])
+# Initialize the ApifyClient with your Apify API token
+# Replace '<YOUR_API_TOKEN>' with your token.
+client = ApifyClient("<YOUR_API_TOKEN>")
+
+# Prepare the Actor input
+run_input = { "keywords": ["Web scraping"] }
+
+# Run the Actor and wait for it to finish
+run = client.actor("scraperpro/google-trends-scraper").call(run_input=run_input)
+
+# Fetch and print Actor results from the run's dataset (if there are any)
+print("💾 Check your data here: https://console.apify.com/storage/datasets/" + run["defaultDatasetId"])
+for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+    print(item)
+
 ```
 
 ***
