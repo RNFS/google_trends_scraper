@@ -20,6 +20,14 @@ Struggling to scrape data from Google Trends? This easy-to-use, reliable scraper
 
 ***
 
+## Filters for Trending Data    
+ 
+- **web** to get Trending Data based on web searchs  
+- **images** to get Trending Data based on image searchs  
+- **news** to get Trending Data based on news searchs  
+- **shopping** to get Trending Data based on shopping searchs  
+- **youtube** to get Trending Data based on youtube searchs  
+
 ## Quickstart
 
 ### Apify CLI
