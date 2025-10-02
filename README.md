@@ -11,7 +11,7 @@ Fetch real-time trending searches, interest over time, interest by region, and r
 
 Struggling to scrape data from Google Trends? This easy-to-use, reliable scraper gives you access to all the data you need. Try it free for 1 day—with no credit card required—and only pay if you love it.
 
-`google-trends-scraper` wraps the [Google Trends Scraper actor on Apify](https://apify.com/scraperpro/google-trends-scraper), providing:
+`google-trends-scraper` wraps the [Google Trends Scraper actor on Apify](https://apify.com/scraperpro/google-trends-scraper?fpr=939u3w&fp_sid=20251002), providing:
 
 - **Trending Now** (realtime hot searches)  
 - **Interest Over Time** (time series for keywords)  
@@ -162,6 +162,6 @@ Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 ## License & Support
 
 This project is licensed under the MIT License.  
-For actor support, visit the [Apify Store listing](https://apify.com/scraperpro/google-trends-scraper) or contact [radwanfaris13@gmail.com](mailto:radwanfaris13@gmail.com).
+For actor support, visit the [Apify Store listing](https://apify.com/scraperpro/google-trends-scraper?fpr=939u3w&fp_sid=20251002) or contact [radwanfaris13@gmail.com](mailto:radwanfaris13@gmail.com).
 
 *Happy scraping!*
